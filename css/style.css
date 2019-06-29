@@ -90,7 +90,7 @@ h1{
 }
 
 .timer img{
-    width: 100%;
+    width: 60%;
     
 }
 .bnt-bg{
@@ -110,8 +110,19 @@ h1{
         border-radius: 6px;
         background: linear-gradient(#F3AE0F, #E38916) #E38916;
 }
-.price{
-    /* margin-top:150px; */
+.price img{
+    /* width:60%; 
+    height: 60%;*/
+}
+#miror{
+    width:70%;
+}
+#price{
+    width:40%;
+}
+.allcontent-information{
+    display: flex;
+    flex-direction: column;
 }
 .allcontent{
     margin: 0px 150px 0px 150px;
@@ -201,14 +212,9 @@ form{
     flex-grow: 1;
 }
 .bnt-center{
-    /* display: flex; 
-    justify-content: center;
-    align-content:center;
-    
-    border: 1px solid #FFDD00;
     border-radius: 7px;
     font-size: 24px;
-    font-weight: 600px;*/
+    font-weight: 600px;
 }
 .bnt-center{
     text-align: center;
@@ -223,24 +229,27 @@ form{
         text-decoration: none;
         padding: .5em 2em;
         
-        /* outline: none; */
+        outline: none;
         /* border-width: 2px 0; */
         /* border-style: solid none; */
         border-color: #FDBE33 #000 #D77206;
         border-radius: 6px;
         background: linear-gradient(#F3AE0F, #E38916) #E38916;
 }
+
 .parktronick{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-top:50px;
     
 }
 
-.parktronick h2{
+.parktronick-title h2{
     text-transform: uppercase;
     font-size: 24px;
 }
-.parktronick span{
+.parktronick-title span{
     color: #FFE83C;
 }
 .pictures{
@@ -255,8 +264,12 @@ form{
     max-width: 170px; 
 }
 .parktronick-work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parktronick-work-title{
     text-transform: uppercase;
-    
     text-align: center;
     margin-top:50px;
 }
@@ -278,6 +291,8 @@ form{
     
 }
 .economy{
+    display: flex;
+    flex-direction: column;
     text-transform: uppercase;
     text-align: center;
     margin-top:50px;
@@ -435,7 +450,8 @@ form{
 }
 .present{
     display: flex;
-    justify-content: center;
+    justify-content: center;text
+
 }
 .present h2{
     text-transform: uppercase;
@@ -444,37 +460,45 @@ form{
 .present span{
     color:#FFE83C;
 }
-.down-block{
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    height: 650px;
-    
-}
+
 .down{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
-    height: 650px;
-    margin:0px 200px;
+    width: 100%;
+    /* height: 650px; */
+    /* margin:0px 200px; */
+    /* margin-top: 50px; */
+}
+.down-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
     margin-top: 50px;
+    /* height: 650px; */
+    
 }
 .down-item-1{
-    max-width: 100%;
+    flex-grow: 1;
+    /* max-width: 100%; */
+    /* width: 300px; */
+}
+.down-item-1 img{
+    width:70%;
 }
 .down-item-2 img{
+    flex-grow: 1;
     margin-top: 30px;
-    max-width: 300px;
+    width:70%;
+    /* max-width: 300px; */
 }
 
-@media (max-width: 500px){ 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+@media (max-width:800px){
+    .container{
+    
+    }
 
 }
