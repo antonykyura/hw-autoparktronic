@@ -37,9 +37,7 @@ header{
     transition: box-shadow .2s, border-color .2s;
     margin-top:10px;
 }
-.item-2{
-    /* text-align: end; */
-}
+
 .item-2 p{
     font-size: 18px;
 }
@@ -53,6 +51,7 @@ h1{
 .bg-img{
     background-image: url(../img/fon.jpg);
     background-size: cover;
+    width: 100%;
     height: 800px;
     display: flex;
     justify-content: space-evenly;
@@ -65,7 +64,7 @@ h1{
     
     background-size: cover;
     background-repeat: no-repeat;
-    width: 400px;
+    width: 80%;
     height: 80px;
     margin-right: 0px;
 
@@ -84,11 +83,10 @@ h1{
 .bg-img-item-1{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   width: 410px;
   height: 500px;
 }
-
 .timer img{
     width: 60%;
     
@@ -109,10 +107,6 @@ h1{
         border-color: #FDBE33 #000 #D77206;
         border-radius: 6px;
         background: linear-gradient(#F3AE0F, #E38916) #E38916;
-}
-.price img{
-    /* width:60%; 
-    height: 60%;*/
 }
 #miror{
     width:70%;
@@ -145,10 +139,7 @@ h1{
    
 }
 hr{
-    border: 1px solid yellow; /* Убираем границу */
-    /* background-color: red; Цвет линии */
-    /* color: red; Цвет линии для IE6-7 */
-    /* height: 2px; Толщина линии */
+    border: 1px solid yellow; 
     size: 60px;
     margin-bottom:50px;
 }
@@ -157,9 +148,6 @@ hr{
     justify-content: space-around;
     flex-wrap: wrap;
     flex-basis:100px;
-   
-    
-    /* align-items: baseline;  */
 }
 
 .content h6{
@@ -170,8 +158,8 @@ hr{
     color: #9B9B9B;
 }
 .info-3 img{
-    max-width:200px;
-    max-height:200px;
+    max-width:80%;
+    max-height:80%;
 }
 
 .section div{
@@ -181,8 +169,9 @@ form{
     align:center;
 }
 .info-1{
-    flex-basis:300px;
+    flex-basis:200px;
     order: 1;
+    flex-grow:1;
 }
 .info-1 p{
     margin-bottom: 50px;
@@ -192,6 +181,8 @@ form{
 .info-2{
     align-self: flex-start;
     order: 2;
+    flex-basis:200px;
+    flex-grow:1;
 }
 .info-2 p{
     margin-bottom: 50px;
@@ -200,7 +191,8 @@ form{
 }
 .info-3{
     order: 3;
- 
+    flex-grow:1;
+    flex-basis:200px;
 }
 .info-3 img{
     margin-bottom: 50px;
@@ -286,7 +278,7 @@ form{
     margin-top:50px;
 }
 .video video{
-    weight:650px;
+    wight:650px;
     height: 350px;
     
 }
@@ -310,7 +302,6 @@ form{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    /* text-align: center; */
     margin-top:50px;
     text-transform: uppercase;
     
@@ -426,13 +417,10 @@ form{
     margin-top:40px;
 }
 .first-block{
-    /* width: 50%; */
     flex-grow: 1;
     flex-basis: 300px;
-    /* margin-right: 20px; */
 }
 .second-block{
-    /* width: 50%; */
     flex-grow: 1;
     flex-basis: 300px;
     
@@ -464,27 +452,18 @@ form{
 .down{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     flex-wrap: wrap;
     width: 100%;
-    /* height: 650px; */
-    /* margin:0px 200px; */
-    /* margin-top: 50px; */
 }
 .down-block{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* flex-grow: 1; */
     flex-wrap: wrap;
     margin-top: 50px;
-    /* height: 650px; */
-    
 }
 .down-item-1{
     flex-grow: 1;
-    /* max-width: 100%; */
-    /* width: 300px; */
 }
 .down-item-1 img{
     width:70%;
@@ -493,12 +472,15 @@ form{
     flex-grow: 1;
     margin-top: 30px;
     width:70%;
-    /* max-width: 300px; */
 }
 
 @media (max-width:800px){
     .container{
-    
+        width:500px;
+        align-content:space-between;
+    }
+    .allcontent{
+        margin: 50px;
     }
 
 }
